@@ -1,8 +1,11 @@
-header {
-  background-color: rgba(0, 0, 0, 0.8);
+header nav {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .bg_grey {
   background-color: #a1a1a1;
+}
+.text_grey {
+  color: #a1a1a1;
 }
 .text_black {
   color: black;
@@ -12,19 +15,53 @@ header {
 }
 main {
   height: 100vh;
-  background-color: blue;
+  background-color: #141922;
 }
 aside {
-  padding-top: 60px;
+  padding-top: 85px;
+}
+.logo {
+  height: 50px;
 }
 aside a img {
   width: 30px;
+}
+.upgrade {
+  padding: 10px 30px;
+  margin-left: 10px;
+}
+.upgrade:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: black;
 }
 aside a {
   display: block;
   padding-bottom: 10px;
   padding-left: 0.5rem;
+  color: #a1a1a1;
+}
+aside a:hover {
+  color: white;
+  text-decoration: none;
 }
 aside .home {
   border-left: 2px solid #87c62c;
+}
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.name {
+  font-weight: 900;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: #282828;
+}
+.bottom img {
+  height: 80px;
 }
