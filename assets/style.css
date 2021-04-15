@@ -1,0 +1,141 @@
+body {
+  overflow: hidden;
+}
+nav.position-fixed {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.bg_grey {
+  background-color: #a1a1a1;
+}
+.text_grey {
+  color: #a1a1a1;
+}
+.text_black {
+  color: black;
+}
+.bg_black {
+  background-color: black;
+}
+main {
+  height: calc(100vh - 110px);
+  background-color: #141922;
+}
+aside {
+  padding-top: 85px;
+}
+.logo {
+  height: 50px;
+}
+aside a img {
+  width: 30px;
+}
+.playlist {
+  flex-grow: 1;
+}
+.upgrade {
+  padding: 10px 30px;
+  margin-left: 10px;
+}
+.upgrade:hover {
+  transform: scale(1.1);
+  color: white;
+  background-color: black;
+}
+aside a {
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 0.5rem;
+  color: #a1a1a1;
+}
+aside a:hover {
+  color: white;
+  text-decoration: none;
+}
+aside .home {
+  border-left: 2px solid #87c62c;
+}
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.name {
+  font-weight: 900;
+}
+.bottom {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  background-color: #282828;
+}
+.bottom img {
+  height: 80px;
+}
+.save i {
+  color: #a1a1a1;
+}
+.song-info span:hover {
+  color: white;
+  text-decoration: underline;
+}
+.save i:hover {
+  color: white;
+}
+.play_icons i {
+  padding: 15px;
+}
+.far.fa-play-circle {
+  vertical-align: middle;
+}
+.bar_long {
+  background-color: gray;
+  border-radius: 10px;
+  height: 6px;
+  width: 500px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bar_long::before {
+  content: "";
+  background-color: white;
+  border-radius: 10px;
+  height: 5px;
+  width: 100px;
+  display: block;
+}
+.bar_long .fas.fa-circle {
+  position: relative;
+  top: -10px;
+  right: 151px;
+  display: none;
+}
+.volume_bar .fas.fa-circle {
+  position: relative;
+  top: -10px;
+  left: 33px;
+  display: none;
+}
+.bar_long:hover .fas.fa-circle,
+.volume_bar:hover .fas.fa-circle {
+  display: block;
+}
+.bar_long:hover::before,
+.volume_bar:hover::before {
+  background-color: #87c62c;
+}
+.volume_bar {
+  background-color: gray;
+  border-radius: 10px;
+  height: 6px;
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.volume_bar::before {
+  content: "";
+  background-color: white;
+  border-radius: 10px;
+  height: 5px;
+  width: 50px;
+  display: block;
+}
