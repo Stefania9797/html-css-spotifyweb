@@ -1,0 +1,30 @@
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.bg_grey {
+  background-color: #a1a1a1;
+}
+.text_black {
+  color: black;
+}
+.bg_black {
+  background-color: black;
+}
+main {
+  height: 100vh;
+  background-color: blue;
+}
+aside {
+  padding-top: 60px;
+}
+aside a img {
+  width: 30px;
+}
+aside a {
+  display: block;
+  padding-bottom: 10px;
+  padding-left: 0.5rem;
+}
+aside .home {
+  border-left: 2px solid #87c62c;
+}
