@@ -1,8 +1,19 @@
+html,
 body {
   overflow: hidden;
 }
+.row {
+  width: 100.8%;
+}
+h2 {
+  margin-top: 40px;
+}
+main .row img {
+  margin-top: 30px;
+}
 nav.position-fixed {
   background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
 }
 .bg_grey {
   background-color: #a1a1a1;
@@ -42,7 +53,7 @@ aside a img {
   width: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #adff2f;
+  background: #87c62c;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-track {
@@ -80,8 +91,9 @@ aside .home {
 }
 .bottom {
   position: fixed;
+  height: 110px;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   background-color: #282828;
 }
 .bottom img {
@@ -154,4 +166,25 @@ aside .home {
   height: 5px;
   width: 50px;
   display: block;
+}
+.main_nav a {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.main_nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+.evidenza span {
+  display: inline-block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 3px;
+  background-color: #87c62c;
+}
+main .row.d-flex img {
+  width: 100%;
 }
