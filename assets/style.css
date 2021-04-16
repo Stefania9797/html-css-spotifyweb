@@ -3,7 +3,7 @@ body {
   overflow: hidden;
 }
 .row {
-  width: 100.8%;
+  max-width: 101.5%;
 }
 h2 {
   margin-top: 40px;
@@ -44,7 +44,7 @@ aside,
 aside a img {
   width: 30px;
 }
-.add_playlist {
+.name_playlist {
   flex-grow: 1;
   height: calc(100vh - 500px);
   overflow: auto;
@@ -97,10 +97,14 @@ aside .home {
   background-color: #282828;
 }
 .bottom img {
+  padding: 1rem;
   height: 80px;
 }
 .save i {
   color: #a1a1a1;
+}
+.save {
+  margin-left: 3rem;
 }
 .song-info span:hover {
   color: white;
@@ -110,7 +114,7 @@ aside .home {
   color: white;
 }
 .play_icons i {
-  padding: 15px;
+  padding: 10px;
 }
 .far.fa-play-circle {
   vertical-align: middle;
@@ -118,8 +122,8 @@ aside .home {
 .bar_long {
   background-color: gray;
   border-radius: 10px;
-  height: 6px;
-  width: 500px;
+  height: 3px;
+  width: 300px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -127,14 +131,14 @@ aside .home {
   content: "";
   background-color: white;
   border-radius: 10px;
-  height: 5px;
+  height: 3px;
   width: 100px;
   display: block;
 }
 .bar_long .fas.fa-circle {
   position: relative;
-  top: -10px;
-  right: 151px;
+  bottom: 10px;
+  right: 50px;
   display: none;
 }
 .volume_bar .fas.fa-circle {
@@ -154,7 +158,7 @@ aside .home {
 .volume_bar {
   background-color: gray;
   border-radius: 10px;
-  height: 6px;
+  height: 3px;
   width: 150px;
   display: inline-block;
   vertical-align: middle;
@@ -163,7 +167,7 @@ aside .home {
   content: "";
   background-color: white;
   border-radius: 10px;
-  height: 5px;
+  height: 3px;
   width: 50px;
   display: block;
 }
@@ -178,7 +182,7 @@ aside .home {
 .evidenza span {
   display: inline-block;
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
   width: 50%;
@@ -187,4 +191,71 @@ aside .home {
 }
 main .row.d-flex img {
   width: 100%;
+}
+
+/* Media query */
+@media screen and (max-width: 992px) {
+  .row {
+    max-width: 101.7%;
+  }
+  .bar_long {
+    width: 200px;
+  }
+  .bar_long::before {
+    width: 50px;
+  }
+  .volume_bar {
+    width: 100px;
+  }
+  .volume_bar::before {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .row {
+    max-width: 102%;
+  }
+  .bar_long {
+    width: 150px;
+  }
+  .bar_long::before {
+    width: 30px;
+  }
+  .volume_bar {
+    width: 60px;
+  }
+  .volume_bar::before {
+    width: 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .row {
+    max-width: 104.7%;
+  }
+  .bottom {
+    padding-top: 20px;
+  }
+  .bar_long {
+    width: 50px;
+  }
+  .main_nav a {
+    margin-right: 0;
+  }
+  .logo {
+    display: none;
+  }
+  .bar_long::before {
+    width: 20px;
+  }
+  .bottom img {
+    padding: 0.2rem;
+    height: 40px;
+  }
+  .play_icons i {
+    padding: 5px;
+  }
+  .save {
+    margin-left: 0.5rem;
+  }
 }
