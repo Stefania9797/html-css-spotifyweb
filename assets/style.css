@@ -81,6 +81,9 @@ aside a:hover {
   color: white;
   text-decoration: none;
 }
+aside a:hover .fas.fa-plus {
+  background-color: white;
+}
 aside .home {
   border-left: 2px solid #87c62c;
 }
@@ -142,8 +145,8 @@ aside .home {
 }
 .volume_bar .fas.fa-circle {
   position: relative;
-  top: -10px;
-  left: 33px;
+  top: -8px;
+  right: 30px;
   display: none;
 }
 .bar_long:hover .fas.fa-circle,
@@ -157,7 +160,7 @@ aside .home {
 .volume_bar {
   border-radius: 10px;
   height: 3px;
-  width: 150px;
+  width: 80px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -169,6 +172,7 @@ aside .home {
   width: 50px;
   display: block;
 }
+/* Main content */
 .main_nav a {
   margin-left: 10px;
   margin-right: 10px;
@@ -177,7 +181,7 @@ aside .home {
   color: white;
   text-decoration: none;
 }
-.evidenza span {
+.main_nav span {
   display: inline-block;
   position: absolute;
   bottom: -5px;
@@ -211,7 +215,7 @@ main .row.d-flex img {
 .smart_icon i {
   display: none;
 }
-/* / Bottom player */
+/* / Main content */
 /* Media query */
 @media screen and (max-width: 576px) {
   .logo,
