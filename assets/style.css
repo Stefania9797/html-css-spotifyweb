@@ -8,8 +8,8 @@ body {
 h2 {
   margin-top: 40px;
 }
-main .row img {
-  margin-top: 30px;
+.logo_small {
+  display: none;
 }
 nav.position-fixed {
   background-color: rgba(0, 0, 0, 0.7);
@@ -61,7 +61,6 @@ aside a img {
 }
 .upgrade {
   padding: 10px 30px;
-  margin-left: 10px;
 }
 .upgrade:hover {
   transform: scale(1.1);
@@ -103,9 +102,6 @@ aside .home {
 .save i {
   color: #a1a1a1;
 }
-.save {
-  margin-left: 3rem;
-}
 .song-info span:hover {
   color: white;
   text-decoration: underline;
@@ -116,8 +112,8 @@ aside .home {
 .play_icons i {
   padding: 10px;
 }
-.far.fa-play-circle {
-  vertical-align: middle;
+.play_icons .far.fa-play-circle:hover {
+  transform: scale(1.2);
 }
 .bar_long {
   background-color: gray;
@@ -137,8 +133,8 @@ aside .home {
 }
 .bar_long .fas.fa-circle {
   position: relative;
-  bottom: 10px;
-  right: 50px;
+  bottom: 8px;
+  left: 90px;
   display: none;
 }
 .volume_bar .fas.fa-circle {
@@ -192,9 +188,32 @@ aside .home {
 main .row.d-flex img {
   width: 100%;
 }
-
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+.playlist_cover {
+  transition: all 1s ease;
+}
+.playlist_cover:hover .overlay,
+.playlist_cover:hover i {
+  display: inline-block;
+}
+.playlist_cover i {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.smart_icon i {
+  display: none;
+}
 /* Media query */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
   .row {
     max-width: 101.7%;
   }
@@ -228,34 +247,31 @@ main .row.d-flex img {
   .volume_bar::before {
     width: 20px;
   }
-}
+} */
+
 @media screen and (max-width: 576px) {
   .row {
     max-width: 104.7%;
   }
-  .bottom {
-    padding-top: 20px;
-  }
-  .bar_long {
-    width: 50px;
-  }
-  .main_nav a {
-    margin-right: 0;
-  }
-  .logo {
+  .logo,
+  .right_control,
+  .save {
     display: none;
   }
-  .bar_long::before {
-    width: 20px;
+  aside span,
+  .add_playlist,
+  .fas.fa-plus,
+  .install a {
+    display: none;
   }
-  .bottom img {
-    padding: 0.2rem;
-    height: 40px;
+  .logo_small {
+    display: inline-block;
+    height: 50px;
   }
-  .play_icons i {
-    padding: 5px;
+  .bottom .col-5 {
+    visibility: hidden;
   }
-  .save {
-    margin-left: 0.5rem;
+  .smart_icon i {
+    display: block;
   }
 }

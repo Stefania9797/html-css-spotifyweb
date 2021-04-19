@@ -18,6 +18,7 @@
         <!-- Nav in alto fissa -->
         <nav class="position-fixed fixed-top navbar navbar-dark justify-content-between">
             <a class="navbar-brand">
+                <img src="./img/logo-small.svg" class="logo_small" alt="">
                 <img src="./img/logo.svg" class="logo" alt="logo spotify">
             </a>
             <button type="button" class="upgrade badge-pill btn btn-outline-light text-uppercase">Effettua l'upgrade</button>
@@ -26,20 +27,42 @@
 
     <div class="row no-gutter">
         <!-- Sidebar -->
-        <aside class="col-lg-2 col-md-3 col-sm-5 col-2 d-flex pb-4 flex-column pl-4 bg_black">
+        <aside class="col-lg-2 col-md-3 col-sm-5 col-3 d-flex pb-4 flex-column pl-4 bg_black">
+            <!-- Home -->
             <div class="home">
-                <a href="#"><img src="./img/home.svg" alt="home icon"> Home</a>
+                <a href="#">
+                    <img src="./img/home.svg" alt="home icon"> 
+                    <span>Home</span>
+                </a>
             </div>
+            <!-- / Home -->
+            <!-- Cerca -->
             <div class="search">
-                <a href="#"><img src="./img/search.svg" alt="search icon"> Cerca</a>
+                <a href="#">
+                    <img src="./img/search.svg" alt="search icon"> 
+                    <span>Cerca</span>
+                </a>
             </div>
+            <!-- /Cerca -->
+            <!-- Libreria -->
             <div class="library">
-                <a href="#"><img src="./img/libreria.svg" alt=""> La tua libreria</a>
+                <a href="#">
+                    <img src="./img/libreria.svg" alt=""> 
+                    <span>La tua libreria</span>
+                </a>
             </div>
+            <!-- / Libreria -->
+            <!-- Playlist -->
             <div class="add_playlist">
                 <h5 class="pl-2 pt-2 grow-2 text-uppercase text-white">Playlist</h5>
             </div>
-            <a href="#"><i class="bg_grey p-3 text_black fas fa-plus"></i><span class="pl-2">Crea playlist</span></a>
+            <!-- Crea Playlist -->
+            <a href="#">
+                <i class="bg_grey p-3 text_black fas fa-plus"></i>
+                <span class="pl-2">Crea playlist</span>
+            </a>
+            <!-- / Crea Playlist -->
+            <!-- Nome playlist -->
             <div class="name_playlist">
                 <a href="#"><span>Nome Playlist</span></a>
                 <a href="#"><span>Nome Playlist</span></a>
@@ -48,23 +71,28 @@
                 <a href="#"><span>Nome Playlist</span></a>
                 <a href="#"><span>Nome Playlist</span></a>
             </div>
+            <!-- / Nome playlist -->
+            <!-- /Playlist -->
+            <!-- Installa app -->
             <div class="install">
                 <a href="#" class="border-bottom">
                     <i class="mr-1 fa fa-arrow-circle-down" aria-hidden="true"></i>
-                    <span>Installa app</span></a>
-                    <div class="user mt-3">
-                        <img class="profile bg_grey" src="./img/profile.svg" alt="">
-                        <span class="name pl-2 text-white">Stefania</span>
-                    </div>
+                    <span>Installa app</span>
                 </a>
+                <!-- Utente -->
+                <div class="user mt-3">
+                    <img class="profile bg_grey" src="./img/profile.svg" alt="">
+                    <span class="name pl-2 text-white">Stefania</span>
+                </div>
+                <!-- / Utente -->
             </div>
+            <!-- Installa app -->
         </aside>
         <!-- /Sidebar -->
         <!-- Contenuto principale -->
-        <main class="col-lg-10 col-md-9 col-sm-7 col-10">
+        <main class="col-lg-10 col-md-9 col-sm-7 col-9">
             <!-- Barra di navigazione principale -->
             <div class="container-fluid">
-
                 <div class="row">
                     <div class="col text-center">
                         <nav class="main_nav text-uppercase">
@@ -79,135 +107,263 @@
                         </nav>
                     </div>
                 </div>
-            </div>    
+            </div> 
+            <!-- / Barra di navigazione principale -->
             <div class="container-fluid">
-                <h2 class="text-white">Recently played</h2> 
+                <!-- Recently played -->
+                <h2 class="text-white pb-3">Recently played</h2> 
                 <div class="row d-flex flex-wrap">
+                    <!-- Metal -->
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
-                        <a href=""><img src="./img/metal_lifting.jpg" alt=""></a>
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img src="./img/metal_lifting.jpg" class="metal" alt="metal playlist cover">
+                        </div>
+                        <!-- / Album cover -->
+                        <!-- Album details -->
                         <div class="track text-center">
                             <h5>Heavy metal</h5>
                             <span class="text_grey">Subtitle</span>
                         </div>
+                        <!-- / Album details -->
                     </div>
+                    <!-- / Metal -->
+                    <!-- Stranger things -->
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
-                        <a href=""><img src="./img/stranger.jpeg" alt=""></a>
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img src="./img/stranger.jpeg" alt="">
+                        </div>
+                        <!-- / Album cover -->
+                        <!-- Album details -->
                         <div class="track text-center">
                             <h5>Stranger things, Vol 1 (a Netflix Original Series Soundtrack)</h5>
                             <span class="text_grey">Subtitle</span>
                         </div>
+                        <!--/ Album details -->
                     </div>
+                    <!-- / Stranger things -->
+                    <!-- Quiet place -->
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
-                        <a href=""><img src="./img/aquietplace.jpeg" alt=""></a>
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i>   
+                            <img src="./img/aquietplace.jpeg" alt="">
+                        </div>
+                        <!-- / Album cover -->
+                        <!-- Album details -->
                         <div class="track text-center">
                             <h5>A Quiet Place</h5>
                             <span class="text_grey">Subtitle</span>
                         </div>
+                        <!-- / Album details -->
                     </div>
+                    <!-- / Quiet place -->
+                    <!-- Split -->
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
-                        <a href=""><img src="./img/split.jpeg" alt=""></a>
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i> 
+                            <img src="./img/split.jpeg" alt="">
+                        </div>
+                        <!-- / Album cover -->
+                        <!-- Album details -->
                         <div class="track text-center">
                             <h5>Split</h5>
                             <span class="text_grey">Subtitle</span>
                         </div>
+                        <!-- / Album details -->
                     </div>
+                    <!-- / Split -->
+                    <!-- A cure for wellness -->
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
-                        <a href=""><img src="./img/cure.jpeg" alt=""></a>
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img src="./img/cure.jpeg" alt="">
+                        </div>
+                        <!-- / Album cover -->
+                        <!-- Albuum details -->
                         <div class="track text-center">
                             <h5>A cure for wellness</h5>
                             <span class="text_grey">Subtitle</span>
                         </div>
+                        <!-- / Album details -->
                     </div>
+                    <!-- / A cure for wellness -->
+                    <!-- Sinister -->
                     <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
-                        <a href=""><img src="./img/sinister.jpeg" alt=""></a>
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img src="./img/sinister.jpeg" alt="">
+                        </div>
+                        <!-- / Album cover -->
+                        <!-- Album details -->
                         <div class="track text-center">
                             <h5>Sinister</h5>
                             <span class="text_grey">Subtitle</span>
                         </div>
+                        <!-- / Album details -->
                     </div>
+                    <!-- /Sinister -->
                 </div>
+                <!-- / Recently played -->
             </div>
+            <!-- Creato per utente -->
             <div class="container-fluid">
                 <h2 class="text-white">Creato per Stefania</h2>
                 <p class="text_grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, id?</p>
                 <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <a href=""><img class="w-100" src="./img/radar.jpeg" alt=""></a>
+                    <!-- Release radar -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img class="w-100" src="./img/radar.jpeg" alt="">
+                        </div>
+                        <!-- /Album cover -->
+                        <!-- Album details -->
                         <div class="track text-center">
                             <h5 class="text-white">Release Radar</h5>
                         </div>
+                        <!-- / Album details -->
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <a href=""><img class="w-100" src="./img/mixdaily.jpeg" alt=""></a>
+                    <!-- / Release radar -->
+                    <!-- Daily mix -->
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
+                        <!-- Album cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img class="w-100" src="./img/mixdaily.jpeg" alt="">
+                        </div>
+                        <!-- / Album cover -->
+                        <!-- Album details -->
                         <div class="track text-center">
                             <h5 class="text-white">Il tuo Daily Mix 1</h5>
                         </div>
+                        <!-- / Album details -->
                     </div>
+                    <!-- / Daily mix -->
                 </div>
             </div>
+            <!-- / Creato per utente -->
             <div class="container-fluid">
+                <!-- Artisti popolari -->
                 <h2 class="text-white">Artisti più popolari</h2>
                 <p class="text_grey">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, sequi.</p>
                 <div class="row">
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <a href=""><img class="w-100 rounded-circle" src="./img/youg.jpeg" alt=""></a>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
+                        <!-- Artist cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay rounded-circle"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img class="w-100 rounded-circle" src="./img/youg.jpeg" alt="">
+                        </div>
+                        <!-- / Artist cover -->
+                        <!-- Artist name -->
                         <div class="track text-center">
                             <h5 class="text-white">Lana del Rey</h5>
                         </div>
+                        <!-- / Artist name -->
                     </div>
-                    <div class="col-lg-2 col-md-3 col-sm-6">
-                        <a href=""><img class="w-100 rounded-circle" src="./img/einaudi.jpeg" alt=""></a>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-6 text-white">
+                        <!-- Artist cover -->
+                        <div class="playlist_cover position-relative">
+                            <div class="overlay rounded-circle"></div>
+                            <i class="far fa-play-circle fa-3x"></i>
+                            <img class="w-100 rounded-circle" src="./img/einaudi.jpeg" alt="">
+                        </div>
+                        <!-- / Artist cover -->
+                        <!-- Artist name -->
                         <div class="track text-center">
                             <h5 class="text-white">Ludovico Einaudi</h5>
                         </div>
+                        <!-- / Artist name -->
                     </div>
                 </div>
+                <!-- / Artisti popolari -->
             </div>          
-            <!-- / Barra di navigazione principale -->
+            </div>
         </main>
         <!-- / Contenuto principale -->
         <!-- Player in basso -->
-    </div>
         <nav class="bottom pb-3 w-100">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-4 col-3 d-flex align-items-center">
+                <div class="row align-items-end">
+                    <!-- Colonna sinistra -->
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-4 d-flex align-items-center">
+                    <!-- Copertina brano -->
                     <div class="thumbnail">
                         <img src="./img/sinister.jpeg" alt="sinister brano">
                     </div>
+                    <!-- / Copertina brano -->
+                    <!-- Info brano -->
                     <div class="song-info">
                         <h6 class="text-white">Sinister</h6>
                         <span class="text_grey">Brano nome</span>
                     </div>
-                    <div class="save">
+                    <!-- / Info brano -->
+                    <!-- Salva brano -->
+                    <div class="save pl-2">
                         <i class="pr-2 far fa-heart"></i>
                         <i class="far fa-folder"></i>
                     </div>
+                    <!-- / Salva brano -->
                 </div>
-                <div class="col-lg-6 col-md-5 col-sm-5 col-6 text-white">
-                    <div class="play_icons text-center pt-1 mr-auto ml-auto">
+                <!-- / Colonna sinistra -->
+                <!-- Colonna centrale -->
+                <div class="col-lg-6 col-md-5 col-sm-5 col-5 text-white">
+                    <!-- Tasti controllo -->
+                    <div class="play_icons d-flex justify-content-center align-items-center text-center pt-1">
                         <i class="fas fa-random"></i>
                         <i class="fas fa-step-backward"></i>
                         <i class="far fa-play-circle fa-2x"></i>
                         <i class="fas fa-step-forward"></i>
                         <i class="fas fa-redo-alt"></i>
                     </div>
-                    <div class="play_bar text-center">
+                    <!-- / Tasti controllo -->
+                    <!-- Barra avanzamento -->
+                    <div class="play_bar d-flex justify-content-center align-items-center">
                         <span>0:25</span>
                         <div class="bar_long ml-2 mr-2">      
                             <i class="fas fa-circle"></i>
                         </div>
                         <span>4:30</span>
                     </div>
+                    <!-- / Barra avanzamento -->
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-3 d-flex align-items-center justify-content-center text-white">
-                    <i class="fas fa-list mr-2"></i>
-                    <i class="fas fa-desktop mr-2"></i>
-                    <i class="fas fa-volume-up mr-2"></i>
-                    <div class="volume_bar">
-                        <i class="fas fa-circle"></i>
+                <!-- / Colonna centrale -->
+                <!-- colonna destra -->
+                <div class="col-lg-3 col-md-3 col-sm-3 col-3 text-white">
+                    <!-- Tasti controllo -->
+                    <div class="right_control">
+                        <i class="fas fa-list mr-2"></i>
+                        <i class="fas fa-desktop mr-2"></i>
+                        <i class="fas fa-volume-up mr-2"></i>
+                        <!-- /Tasti controllo -->
+                        <!-- Barra volume -->
+                        <div class="volume_bar">
+                            <i class="fas fa-circle"></i>
+                        </div>
+                    </div>
+                    <!-- / Barra volume -->
+                    <div class="smart_icon d-flex justify-content-around mt-3">
+                        <i class="pr-2 far fa-heart fa-2x"></i>
+                        <i class="far fa-play-circle fa-2x"></i>
                     </div>
                 </div>
+                <!-- / Colonna destra -->
             </div>
         </nav>
     </div>
