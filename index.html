@@ -124,8 +124,8 @@
                         <!-- / Album cover -->
                         <!-- Album details -->
                         <div class="track text-center">
-                            <h5>Heavy metal</h5>
-                            <span class="text_grey">Subtitle</span>
+                            <h5 id="metallica">Heavy metal</h5>
+                            <span id="metal_subt" class="text_grey">Subtitle</span>
                         </div>
                         <!-- / Album details -->
                     </div>
@@ -141,8 +141,8 @@
                         <!-- / Album cover -->
                         <!-- Album details -->
                         <div class="track text-center">
-                            <h5>Stranger things, Vol 1 (a Netflix Original Series Soundtrack)</h5>
-                            <span class="text_grey">Subtitle</span>
+                            <h5 id="stranger">Stranger things, Vol 1 (a Netflix Original Series Soundtrack)</h5>
+                            <span id="stranger_subt" class="text_grey">Subtitle</span>
                         </div>
                         <!--/ Album details -->
                     </div>
@@ -158,8 +158,8 @@
                         <!-- / Album cover -->
                         <!-- Album details -->
                         <div class="track text-center">
-                            <h5>A Quiet Place</h5>
-                            <span class="text_grey">Subtitle</span>
+                            <h5 id="horror" >A Quiet Place</h5>
+                            <span  id="horror_subt" class="text_grey">Subtitle</span>
                         </div>
                         <!-- / Album details -->
                     </div>
@@ -192,8 +192,8 @@
                         <!-- / Album cover -->
                         <!-- Albuum details -->
                         <div class="track text-center">
-                            <h5>A cure for wellness</h5>
-                            <span class="text_grey">Subtitle</span>
+                            <h5 id="cure">A cure for wellness</h5>
+                            <span id="cure_subt" class="text_grey">Subtitle</span>
                         </div>
                         <!-- / Album details -->
                     </div>
@@ -373,5 +373,11 @@
         </nav>
     </div>
         <!-- /Player in basso -->
+    <!-- Java script -->
+    <script src="./assets/main.js"></script>
+    <script>
+        document.getElementById("metal_subt").innerHTML="Playlist con brani dei metallica";
+        document.getElementById("metallica").innerHTML="Metallica Playlist";
+    </script>
     </body>
     </html>
